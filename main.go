@@ -7,13 +7,6 @@ import (
 	"origin"
 )
 
-type Album struct {
-	ID     int64
-	Title  string
-	Artist string
-	Price  float32
-}
-
 func main() {
 	db, err := origin.Connect("recordings")
 	if err != nil {
